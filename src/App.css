@@ -1,0 +1,25 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+
+:root{
+    --main-color: yellow;
+    --fir-color: #830a48;
+    --sec-color: #12263a;
+    --las-color: rgb(238, 44, 130);
+    --p-color: #626262;
+    --bor-color: #e2e2e2;
+    --bag-color: #fff7f2;
+    --pd-all: 30px;
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+}

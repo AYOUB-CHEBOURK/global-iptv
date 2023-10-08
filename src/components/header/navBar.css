@@ -1,0 +1,108 @@
+
+.navBar{
+    background-color: white;
+    /* background-image: url('../../assets/images/image1.png'); */
+}
+
+.navBar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+} 
+
+.navBar .logo img{
+    width: 180px;
+    cursor: pointer;
+    margin-top: -9px;
+}
+
+.navBar .text{
+    display: flex;
+}
+
+.navBar .text nav ul{
+    display: flex;
+}
+
+.navBar .text nav ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    font-weight:500;
+    z-index: 99;
+    color: var(--sec-color);
+    transition: .4s ease;
+}
+.navBar .text nav ul li a:hover,
+.navBar .text nav ul li a:focus{
+    color: var(--main-color);
+}
+
+.toggle{
+    color: var(--fir-color);
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    display: none ;
+    background: none;
+    margin-left: 20%;
+} 
+
+.toggle:hover{
+    color: var(--las-color);
+}
+
+
+.navBar .btn button{
+    padding: 8px;
+    background-color: var(--fir-color);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    transition: .5s ease;
+}
+
+.navBar .btn button:hover{
+    background-color: var(--las-color);
+}
+
+@media screen and (max-width: 786px) {
+    .navBar .text nav ul{
+        display: none;
+    }
+    .toggle{
+        display: block;
+        font-size: 25px;
+    }
+    .hideMenu{
+        background-color: var(--fir-color);
+        display: block;
+        text-align: center;
+        position: absolute;
+        top: 10vh;
+        left: 3vh;
+        width: 90%;
+        height: 25%;
+        z-index: 99;
+    }
+
+    .navBar .text .hideMenu nav ul{
+        display: block;
+    }
+
+    .navBar .text .hideMenu nav ul li a{
+        color: white;
+    }
+
+    .navBar .logo img{
+        width: 100%;
+    }
+    .navBar .btn button{
+        width: 90px;
+    }
+}

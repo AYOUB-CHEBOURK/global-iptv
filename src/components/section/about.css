@@ -1,0 +1,122 @@
+
+/* .about{
+    height: 280vh;
+} */
+
+.about .text h1{
+    color: var(--sec-color);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.about .text .image{
+    display: flex;
+    justify-content: center;
+    padding: var(--pd-all);
+}
+
+.about .text p{
+    width: 75%;
+    margin: 20px auto;
+    text-align: center;
+    margin-top: 0;
+    color: var(--p-color);
+    font-size: 17px;
+}
+
+.about .text p span{
+    color: black;
+    font-weight: bold;
+}
+
+.about .boxes{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 10px;
+}
+
+.about .boxes .box{
+    border: 1px solid var(--bor-color);
+    border-radius: 20px;
+    padding: var(--pd-all);
+}
+
+.about .boxes .box h2{
+    padding-top: calc(var(--pd-all) + 20px);
+    padding-bottom: calc(var(--pd-all) - 10px);
+    font-size: 20px;
+    color: var(--sec-color);
+    font-weight: 700;
+    position: relative;
+}
+
+.about .boxes .box h2::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: var(--bor-color);
+    position: absolute;
+    left: 50%;
+    bottom: 85%;
+    transform: translateX(-50%);
+}
+
+.about .boxes .box p{
+    color: var(--p-color);
+}
+
+.about h3{
+    color: var(--sec-color);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: calc(var(--pd-all) - 20px);
+}
+
+.about h3 span{
+    color: var(--main-color);
+}
+
+.about .images{
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+    padding-top: var(--pd-all);
+    padding-bottom: var(--pd-all);
+}
+
+.about .images img{
+    width: 80%;
+    height: 70%;
+}
+
+.about button{
+    padding: 8px;
+    background-color: var(--fir-color);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    font-size: 20px;
+    transition: .5s ease;
+    position: absolute;
+    left: 45%;
+    transform: translateX(-50%);
+}
+
+.about button:hover{
+    background-color: var(--las-color);
+}
+
+@media screen and (max-width: 768px){
+    .about .images{
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+        margin-left: 10%;
+    }
+    .about button{
+        position: absolute;
+        left: 30%;
+    }
+}

@@ -1,0 +1,80 @@
+
+.footer{
+    background-color: #ffcf00;
+}
+
+.footer .container{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    padding: var(--pd-all);
+    padding-bottom: 50px;
+    gap: 100px;
+}
+
+.footer .logo img{
+    width: 200px;
+    cursor: pointer;
+}
+
+.footer .contacts{
+    text-align: center;
+}
+
+.footer .contacts h1{
+    color: var(--sec-color);
+    font-weight: 600;
+}
+
+.footer .contacts div{
+    padding: 15px;
+    color: var(--p-color);
+}
+
+.footer .contacts ul{
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+.footer .contacts ul li{
+    text-align: center;
+    margin-right: 40px;
+}
+
+.footer .contacts ul li a{
+    font-size: 30px;
+    color: var(--p-color);
+    transition: .8s ease;
+}
+
+.footer .contacts ul li a:hover{
+    color: var(--las-color);
+}
+
+.footer .imagePP img{
+    width: 150px;
+}
+
+.footer .copy{
+    text-align: center;
+    padding: var(--pd-all);
+    color: var(--p-color);
+    font-size: 20px;
+}
+
+@media screen and (max-width: 992px){
+    .footer .container{
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+    }
+
+    .footer .logo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer .imagePP{
+        display: flex;
+        justify-content: center;
+    }
+}

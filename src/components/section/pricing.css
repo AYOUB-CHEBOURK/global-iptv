@@ -1,0 +1,117 @@
+
+.pricing .image{
+    display: flex;
+    justify-content: center;
+    padding: var(--pd-all);
+}
+
+
+.pricing h1{
+    color: var(--sec-color);
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.pricing h1 span ,
+.pricing h2 span{
+    color: var(--main-color);
+}
+
+.pricing h2{
+    color: var(--sec-color);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.pricing .boxes{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 20px;
+    padding: var(--pd-all);
+}
+
+.pricing .boxes .box{
+    background-color: #ec9fc7;
+    box-shadow: 0 0 10px 0px var(--fir-color);
+    padding: var(--pd-all);
+    border-radius: 20px;
+    position: relative;
+}
+
+.pricing .boxes .box:hover{
+    box-shadow: 0 0 15px 2px var(--fir-color);
+    margin-top: -10px;
+    transition: .8s ease;
+}
+
+.pricing .boxes .box.bestCart{
+    background-color: var(--main-color);
+}
+
+.pricing .boxes .box h3{
+    text-align: center;
+    font-size: 30px;
+}
+
+.pricing .boxes .box h4{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--sec-color);
+}
+
+.pricing .boxes .box ul{
+    color: var(--p-color);
+    padding: var(--pd-all);
+    width: 300px;
+}
+
+.pricing .boxes .box ul li{
+    line-height: 3;
+}
+
+.pricing .boxes .box ul li .icon{
+    font-weight: 900;
+    margin-right: 10px; 
+}
+
+.pricing .boxes .box button{
+    padding: 8px;
+    background-color: var(--fir-color);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    font-size: 20px;
+    transition: .5s linear;
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pricing .boxes .box button:hover{
+    background-color: var(--las-color);
+}
+
+.pricing .text{
+    padding: var(--pd-all);
+    text-align: center;
+    color: var(--p-color);
+    font-weight: 600;
+}
+
+@media screen and (max-width: 992px){
+    .pricing .boxes{
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    .pricing .boxes .box ul{
+        color: var(--p-color);
+        padding: var(--pd-all);
+        width: 100%;
+    }
+}

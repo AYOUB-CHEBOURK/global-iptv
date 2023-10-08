@@ -1,0 +1,114 @@
+
+.article{
+    margin-top: calc(var(--pd-all) + 50px);
+    background-color: var(--bag-color);
+    background-image: url("../../assets/images/shopassistant-section-pic1.webp");
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.article .container{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 60px;
+    padding-top: calc(var(--pd-all) + 50px);
+    padding-bottom: var(--pd-all);
+}
+
+.article .text h1{
+    color: var(--sec-color);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.article .text h1 span{
+    color: var(--main-color);
+}
+
+.article .text .image{
+    display: flex;
+    justify-content: center;
+    padding: var(--pd-all);
+}
+
+.article .text p{
+    padding-bottom: var(--pd-all);
+    color: var(--p-color);
+    font-size: 17px;
+}
+
+.article .boxes{
+    position: relative;
+}
+
+.article .boxes::before{
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: var(--bor-color);
+    position: absolute;
+    left: -9%;
+}
+
+.article .box{
+    padding-bottom: var(--pd-all);
+}
+
+.article .box h2{
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.article .box h3{
+    color: var(--p-color);
+    font-size: large;
+}
+
+.article .box div{
+    width: 100%;
+    height: 15px;
+    background-color: #eee;
+    overflow: hidden;
+}
+
+.article .box div .colorB{
+    background-color: #6EC1E4;
+    padding-left: 98%;
+    padding-top: 3px;
+}
+
+.article .box div .colorY{
+    background-color: var(--main-color);
+    padding-left: 100%;
+    padding-top: 3px;
+}
+
+.article .box div .colorP{
+    background-color: #a579c8;
+    padding-left: 80%;
+    padding-top: 3px;
+}
+
+.article .box div .colorV{
+    background-color: #c87979;
+    padding-left: 70%;
+    padding-top: 3px;
+}
+
+@media screen and (max-width: 768px){
+    .article .container{
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+    }
+
+    .article .boxes::before{
+        display: none;
+    }
+
+    .article .box h2,
+    .article .box h3,
+    .article .text p{
+        text-align: center;
+    }
+}
