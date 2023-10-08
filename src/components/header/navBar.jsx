@@ -1,4 +1,4 @@
-import './NavBar.css'
+import './navBar.css'
 import logo from '../../assets/images/logo.png'
 import { FaBars } from "react-icons/fa6";
 import { useEffect, useState } from 'react';
