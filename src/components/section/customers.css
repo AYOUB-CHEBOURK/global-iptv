@@ -6,6 +6,7 @@
     background-image: url("../../assets/images/image13.png");
     background-repeat: no-repeat;
     background-position-x: center;
+    overflow: hidden;
 }
 
 .customers .container{

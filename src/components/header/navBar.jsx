@@ -26,9 +26,9 @@ const NavBar = () =>{
                     <div className={responsive ? "hideMenu" : "nav"}>
                         <nav>
                             <ul>
-                                <li><Link to='/' className='active' data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="1000">Home</Link></li>
-                                <li><Link to='/installation' data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="1500">Installation</Link></li>
-                                <li><Link to='/blog' data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000">Blog</Link></li>
+                                <li><Link to='/' className='active' data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="1000" onClick={() =>{ setResponsive(!responsive)}}>Home</Link></li>
+                                <li><Link to='/installation' data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="1500" onClick={() =>{ setResponsive(!responsive)}}>Installation</Link></li>
+                                <li><Link to='/blog' data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000" onClick={() =>{ setResponsive(!responsive)}}>Blog</Link></li>
                             </ul>
                         </nav>
                     </div>

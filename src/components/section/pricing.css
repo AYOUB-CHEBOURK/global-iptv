@@ -1,4 +1,8 @@
 
+.pricing{
+    overflow: hidden;
+}
+
 .pricing .image{
     display: flex;
     justify-content: center;
