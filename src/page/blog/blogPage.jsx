@@ -2,8 +2,15 @@ import './blogPage.css'
 import image15 from '../../assets/images/image15.png'
 import image24 from '../../assets/images/image24.png'
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const BlogPage = () =>{
+
+
+    useEffect(() =>{
+        window.scrollTo(0,0);
+    }, []);
+
     return(
         <>
           <div className="blog-page">
